@@ -239,7 +239,10 @@
     transition:background .25s ease,border-color .25s ease,color .25s ease;
   }
   .linkbtn:hover,.linkbtn:focus-visible{background:rgba(210,178,132,.14);border-color:var(--gold);color:var(--gold-hi)}
-  .dress{margin:3rem auto 0;max-width:var(--measure);color:var(--dusty);font-style:italic;position:relative;z-index:1}
+  .dress{margin:3.5rem auto 0;max-width:30rem;padding:1.6rem 1.5rem 1.7rem;text-align:center;position:relative;z-index:1;border:1px solid var(--gold);border-radius:4px;background:rgba(210,178,132,.08);box-shadow:0 0 0 4px rgba(4,11,24,.6),0 0 0 5px rgba(210,178,132,.35)}
+  .dress .dress-label{display:block;font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+  .dress .dress-title{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(1.9rem,6vw,2.5rem);line-height:1.1;color:var(--gold-hi);margin-bottom:.8rem}
+  .dress .dress-note{display:block;color:var(--cream);font-size:1.1em;line-height:1.55}
 
   /* ══ CORTE ═════════════════════════════════════════════════ */
   .court{display:grid;gap:clamp(1rem,3vw,1.75rem);grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr));position:relative;z-index:1}
@@ -663,10 +666,10 @@ html[lang="en"] .qp [data-en]{display:inline !important}
       </div>
     </div>
 
-    <p class="dress">
-      <span data-es>Etiqueta formal. Los colores de la noche son el azul marino y el dorado — te pedimos reservar el azul marino para la corte.</span>
-      <span data-en>Formal attire. The colors of the night are navy and gold — we ask that navy be left to the court.</span>
-    </p>
+    <div class="dress">
+      <span data-es><span class="dress-label">Código de vestimenta</span><span class="dress-title">Semi formal</span><span class="dress-note">Los colores de la noche son el azul marino y el dorado — te pedimos reservar el azul marino para la corte.</span></span>
+      <span data-en><span class="dress-label">Dress code</span><span class="dress-title">Semi-formal</span><span class="dress-note">The colors of the night are navy and gold — we ask that navy be left to the court.</span></span>
+    </div>
   </div>
 </section>
 
